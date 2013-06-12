@@ -1,7 +1,1 @@
-== Primeira aplicação
-
-
-
-Teste de aplicação
-
-<tt>alterando o README</tt>
+Teste rails
