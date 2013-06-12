@@ -1,4 +1,5 @@
 FirstApp::Application.routes.draw do
+  match 'black' => 'welcome#black', :via => :get, :as => :black
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
