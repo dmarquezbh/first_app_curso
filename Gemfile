@@ -14,6 +14,7 @@ group :production do
 end
 
 group :test do
+  gem 'fuubar'
 
   # Acceptance test framework for web applications
   # https://github.com/jnicklas/capybara

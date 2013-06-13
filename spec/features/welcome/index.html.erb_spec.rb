@@ -9,7 +9,7 @@ describe ".index", :type => :feature do
 
   it "access public pages" do
     visit index_path
-    page.should have_content("Hello, world!")
+    page.should have_content("Hello, vard!")
     click_link "About"
     page.should have_content("About us")
     click_link "Contact"
