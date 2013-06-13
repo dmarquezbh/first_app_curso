@@ -8,7 +8,15 @@
 </head>
 <body>
 
-<%= yield %>
+<div class='row_fluid'>
+	<div class='span3'>
+		<%= yield :sidebar %>
+	</div>
+
+	<div class='span9'>
+		<%= yield %>
+	</div>
+</div>
 
 </body>
 </html>
