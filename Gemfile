@@ -13,6 +13,18 @@ group :production do
   gem 'pg'
 end
 
+group :test do
+
+  # Acceptance test framework for web applications
+  # https://github.com/jnicklas/capybara
+  gem 'capybara'
+
+  # rspec-rails is a testing framework for Rails 3.x and 4.x.
+  # https://github.com/rspec/rspec-rails
+  gem 'rspec-rails'
+
+end
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
