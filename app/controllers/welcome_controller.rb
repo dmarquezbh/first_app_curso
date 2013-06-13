@@ -9,4 +9,10 @@ class WelcomeController < ApplicationController
   def black
   	render :layout => 'application_black'
   end
+
+  def about
+  end
+
+  def contact
+  end
 end
