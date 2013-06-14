@@ -23,7 +23,7 @@ group :test do
   # rspec-rails is a testing framework for Rails 3.x and 4.x.
   # https://github.com/rspec/rspec-rails
   gem 'rspec-rails'
-
+  gem 'shoulda-matchers'
 end
 
 # Gems used only for assets and not required
