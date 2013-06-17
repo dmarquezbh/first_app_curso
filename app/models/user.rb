@@ -7,9 +7,11 @@ class User < ActiveRecord::Base
 
   validates :name, :presence => true, :allow_blank => false
   validates :email, :presence => true, :allow_blank => false
+  validates_uniqueness_of :email
   validates :gender, :presence => true, :if => :adulthood
+  
 
   def adulthood
-    age >= 18
+    self.age.present? and age >= 18
   end
 end

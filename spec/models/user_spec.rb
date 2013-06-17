@@ -54,4 +54,40 @@ describe User do
     end
   end
 
+  context "when tries to create two users with same email" do
+    it "creates two users with different emails" do
+      user_1 = User.create(:name => "Primeiro usuário", :email => "email_1@gmail.com")
+      user_2 = User.new(:name => "Segundo usuário", :email => "email_2@gmail.com")
+      user_2.save.should be_true
+    end
+
+    it "does not create two users with same emails" do
+      user_1 = User.create(:name => "Primeiro usuário", :email => "email_1@gmail.com")
+      user_2 = User.new(:name => "Segundo usuário", :email => "email_1@gmail.com")
+      user_2.save.should be_false
+    end
+  end 
+end
+
+describe "#adulthood" do
+
+  it "is adult when age == 18" do
+    user = User.new(:name => "Nome", :email => "email@gmail.com", :age => 18)
+    user.adulthood.should be_true
+  end
+
+  it "is adult when age > 18" do
+    user = User.new(:name => "Nome", :email => "email@gmail.com", :age => 30)
+    user.adulthood.should be_true
+  end
+
+  it "is adult when age < 18" do
+    user = User.new(:name => "Nome", :email => "email@gmail.com", :age => 17)
+    user.adulthood.should be_false
+  end
+
+  it "is not adult when age is blank" do
+    user = User.new(:name => "Nome", :email => "email@gmail.com")
+    user.adulthood.should be_false
+  end
 end
