@@ -15,7 +15,7 @@ end
 
 group :test do
   gem 'fuubar'
-
+  gem 'simplecov'
   # Acceptance test framework for web applications
   # https://github.com/jnicklas/capybara
   gem 'capybara'
