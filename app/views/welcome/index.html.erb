@@ -1,7 +1,13 @@
 
+<%= link_to 'Mudar locale', change_locale_path(:locale => params[:locale] =='pt' ? 'en' : 'pt') %>
+
 <div class="span9">
   <% label = "<i class='icon-user'></i>&nbsp;Usuários".html_safe %>
   <%= link_to label, users_path, :class => "btn btn-large" %>
+  
+  <% label = "<i class='icon-user'></i>&nbsp;Produtos".html_safe %>
+  <%= link_to label, products_path, :class => "btn btn-large" %>
+
 </div><!--/span-->
 
 <%= content_for :sidebar do %>

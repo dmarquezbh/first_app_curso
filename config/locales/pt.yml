@@ -2,5 +2,5 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 pt:
-  hello: "Hello world"
-  new_user: "New user"
+  hello: "Olá Mundo"
+  new_user: "Novo Usuário"
