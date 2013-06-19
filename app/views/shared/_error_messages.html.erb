@@ -1,8 +1,8 @@
-<% if resources.errors.any? %>
+<% if resource.errors.any? %>
   <div id="error_explanation">
-    <h2><%= pluralize(resources.errors.count, "error") %> erros:</h2>
+    <h2><%= pluralize(resource.errors.count, "error") %> erros:</h2>
     <ul>
-      <% resources.errors.full_messages.each do |msg| %>
+      <% resource.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
     </ul>
