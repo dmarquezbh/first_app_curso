@@ -11,6 +11,9 @@ pt:
   bills: "Despesas"
   saved_successfully: "Salvo com sucesso"
   error_while_saving: "Erro ao salvar"
+  error_while_deleting: "Erro ao excluir"
+  updated_successfully: "Atualizado com sucesso"
+  error_while_updating: "Erro ao atualizar"
   no_bill_registered_to_this_user: Não há contas cadastradas para este usuário 
   date:
     abbr_day_names:

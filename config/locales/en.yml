@@ -11,6 +11,9 @@ en:
   delete: "Delete"
   saved_successfully: "Saved successfully"
   error_while_saving: "Error while saving"
+  error_while_deleting: "Error while deleting"
+  updated_successfully: "Updated successfully"
+  error_while_updating: "Error while updating"
   no_bill_registered_to_this_user:  No bill registered to this user
   date:
     abbr_day_names:

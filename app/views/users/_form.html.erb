@@ -1,5 +1,5 @@
 <%= form_for(user) do |f| %>
-  <%= render :partial => 'shared/error_messages', :locals => { :resources => user } %>
+  <%= render :partial => 'shared/error_messages', :locals => { :resource => user } %>
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
