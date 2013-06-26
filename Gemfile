@@ -9,7 +9,10 @@ group :development do
   gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'mailcatcher'
 end
+
+gem 'devise'
 
 group :production do
   gem 'pg'
@@ -18,6 +21,7 @@ end
 group :test do
   gem 'fuubar'
   gem 'simplecov'
+  gem 'factory_girl_rails', "~> 4.0"
   # Acceptance test framework for web applications
   # https://github.com/jnicklas/capybara
   gem 'capybara'
